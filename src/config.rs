@@ -13,7 +13,7 @@ impl Config {
                 Ok(i) => i,
                 Err(_) => return Err("Given duration argument is not a digit!"),
             },
-            None => 15 * 60 as u64,
+            None => 15 * 60,
         };
 
         let message = match args.next() {
