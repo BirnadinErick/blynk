@@ -18,12 +18,11 @@ fn main() {
         process::exit(1);
     });
 
-    let duration: String;
-    if config.get_duration() > 60 {
-        duration = format!("{} minutes", config.get_duration() / 60);
+    let duration: String = if config.get_duration() > 60 {
+        format!("{} minutes", config.get_duration() / 60)
     } else {
-        duration = format!("{} seconds", config.get_duration());
-    }
+        format!("{} seconds", config.get_duration())
+    };
 
     println!(
         "Configuration:-\n\tduration: {}\n\tmessage: {}",
