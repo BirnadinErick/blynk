@@ -2,6 +2,8 @@
 
 A dead simple commandline utility to remind the user to blink within a given interval of time.
 
+[![build master](https://github.com/BirnadinErick/blynk/actions/workflows/rust.yml/badge.svg?branch=master&event=push)](https://github.com/BirnadinErick/blynk/actions/workflows/rust.yml)
+
 > Skip to the [Installation](index.md#installation) for quickstart. Continue,
 > if you are interested in the origin of `blynk`.
 
