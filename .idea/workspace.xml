@@ -47,7 +47,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cargo.Test schedule">
+  <component name="RunManager" selected="Cargo.Run">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package blynk --bin blynk" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -65,8 +65,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test config::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package blynk --lib config::tests" />
+    <configuration name="Test config" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package blynk --lib config" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -152,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test schedule" />
         <item itemvalue="Cargo.Test schedule::tests::schedule_for_ten_seconds" />
+        <item itemvalue="Cargo.Test config" />
+        <item itemvalue="Cargo.Test schedule" />
         <item itemvalue="Cargo.Test notify::tests::notify_check" />
         <item itemvalue="Cargo.Test notify" />
-        <item itemvalue="Cargo.Test config::tests" />
       </list>
     </recent_temporary>
   </component>

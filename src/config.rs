@@ -1,5 +1,5 @@
 pub struct Config {
-    duration: u32,
+    duration: u64,
     message: String,
 }
 
@@ -9,11 +9,11 @@ impl Config {
         args.next();
 
         let duration = match args.next() {
-            Some(t) => match t.parse::<u32>() {
+            Some(t) => match t.parse::<u64>() {
                 Ok(i) => i,
                 Err(_) => return Err("Given duration argument is not a digit!"),
             },
-            None => 25 * 60,
+            None => 15 * 60 as u64,
         };
 
         let message = match args.next() {
@@ -22,6 +22,14 @@ impl Config {
         };
 
         Ok(Config { duration, message })
+    }
+
+    pub fn get_duration(&self) -> u64 {
+        self.duration
+    }
+
+    pub fn get_message(&self) -> &str {
+        &self.message
     }
 }
 
@@ -39,8 +47,8 @@ mod tests {
 
         let config = Config::new(args.iter().map(|s| s.to_string())).unwrap();
 
-        assert_eq!(config.duration, 20);
-        assert_eq!(config.message, String::from("Hello"));
+        assert_eq!(config.get_duration(), 20);
+        assert_eq!(config.get_message(), String::from("Hello"));
     }
 
     #[test]

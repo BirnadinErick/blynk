@@ -1,5 +1,6 @@
 mod config;
 mod notify;
-mod schedule;
+
+pub mod schedule;
 
 pub use config::Config;
