@@ -1,6 +1,14 @@
 [package]
 name = "blynk"
+description = "utility to remind you to blink for given interval 😉"
+authors = ["BirnadinErick <b.erick190@gmail.com>"]
 version = "0.1.0"
 edition = "2021"
+readme = "https://github.com/BirnadinErick/blynk#readme"
+repository = "https://github.com/BirnadinErick/blynk"
+license  = "Apache License v2.0.0"
+publish = false
+homepage = "https://github.com/BirnadinErick/blynk"
 
 [dependencies]
+notify-rust = "4.5.8"

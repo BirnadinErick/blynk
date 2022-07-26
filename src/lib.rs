@@ -1,3 +1,4 @@
-pub struct Config {
-    duration: u32,
-}
+mod config;
+mod notify;
+
+pub use config::Config;
