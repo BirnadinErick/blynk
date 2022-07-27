@@ -12,7 +12,7 @@ jobs:
   latest-release-linux:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout source
+      - name: checkout
         uses: actions/checkout@v2
       
       - name: init rust toolchain

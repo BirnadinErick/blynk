@@ -10,7 +10,7 @@ print("BASE DIR: ", BASE_DIR )
 print("BINARY PATH: ", BIN_PATH)
 
 print("moving release binary...")
-shutil.copyfile(BIN_PATH, os.path.join(BASE_DIR, "blynk.exe"))
+shutil.copyfile(BIN_PATH, os.path.join(BASE_DIR, "blynk"))
 print("done moving!")
 
 print("zipping...")
