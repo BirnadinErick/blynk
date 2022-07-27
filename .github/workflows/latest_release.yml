@@ -30,6 +30,7 @@ jobs:
       
       - name: create release artifacts
         run: |
+          ls -R . && \
           python3 ./release.py
       
       - name: publish release
