@@ -17,7 +17,7 @@ shutil.copyfile(BIN_PATH, os.path.join(BASE_DIR, BIN_NAME))
 print("done moving!")
 
 print("zipping...")
-with ZipFile('blynk_latest.zip', 'w') as zip:
+with ZipFile(f'blynk_latest_{platform.system().lower()}.zip', 'w') as zip:
     zip.write("blynk")
     zip.write("LICENSE.md")
 print("Done zipping!")
