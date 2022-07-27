@@ -25,7 +25,8 @@ jobs:
       - name: build release binary
         uses: actions-rs/cargo@v1
         with:
-          command: build --release
+          command: build
+          args: --release
       
       - name: create release artifacts
         run: |
