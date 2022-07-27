@@ -2,7 +2,7 @@
 name = "blynk"
 description = "utility to remind you to blink for given interval 😉"
 authors = ["BirnadinErick <b.erick190@gmail.com>"]
-version = "0.8.3"
+version = "0.9.0"
 edition = "2021"
 readme = "https://github.com/BirnadinErick/blynk#readme"
 repository = "https://github.com/BirnadinErick/blynk"
