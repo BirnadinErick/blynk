@@ -12,4 +12,4 @@ homepage = "https://github.com/BirnadinErick/blynk"
 
 [dependencies]
 notify-rust = "4.5.8"
-ctrlc = "3.2.2"
+ctrlc = "3.2.5"
