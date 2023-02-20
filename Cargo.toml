@@ -11,5 +11,5 @@ publish = false
 homepage = "https://github.com/BirnadinErick/blynk"
 
 [dependencies]
-notify-rust = "4.5.8"
+notify-rust = "4.8.0"
 ctrlc = "3.2.2"
